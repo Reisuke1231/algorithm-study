@@ -5,8 +5,10 @@
 def gcd(a, b):
     while (b != 0):
         t = a       # set aside the value of a
+        print("a:{} b:{} t:{}".format(a, b, t))
+
         a = b       # set a equal to b
-        b = t % b   # divide t (which is a) by b
+        b = t % b   # remainder of divide t (which is a) by b
 
     return a
 
